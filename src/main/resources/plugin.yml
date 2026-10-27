@@ -1,0 +1,20 @@
+name: MytheriaOrigins
+version: 1.0.0
+main: com.mytheriamc.origins.MytheriaOrigins
+api-version: '26.3'
+author: MytheriaMC
+description: Pink and purple origin powers for MytheriaMC.
+commands:
+  origins:
+    description: Open the Mytheria Origins menu.
+    usage: /origins
+  origin:
+    description: Open the Mytheria Origins menu.
+    usage: /origin
+permissions:
+  mytheriaorigins.admin:
+    description: Access the Mytheria Origins admin panel.
+    default: op
+  mytheriaorigins.use:
+    description: Use origin abilities.
+    default: true

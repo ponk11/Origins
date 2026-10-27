@@ -1,0 +1,91 @@
+menu:
+  title: "&d&lMytheria Origins"
+  origin-price: 250
+  rental-hours: 168
+  currency: "diamonds"
+  item-slots:
+    blaze: 10
+    breeze: 11
+    shulker: 12
+    guardian: 13
+  show-admin-button: true
+  show-help-button: true
+  show-vault-button: true
+settings:
+  messages:
+    prefix: "&dMytheria &8» &f"
+    rental-expired: "&cYour origin rental has expired. Choose a new origin from the menu."
+    purchase-success: "&dYou are now a &f{origin}&d for {hours} hours."
+    not-enough-diamonds: "&cYou need {amount} diamonds."
+  fireball-damage: 6.0
+  fireball-cooldown-seconds: 8
+  fireball-fire-ticks: 100
+  wind-charge-cooldown-seconds: 2
+  wind-charge-speed: 1.3
+  shulker-bullet-cooldown-seconds: 4
+  guardian-beam-cooldown-seconds: 3
+  guardian-beam-damage: 6.0
+  blaze-relic-cooldown-seconds: 120
+  blaze-relic-fire-ticks: 1200
+  blaze-relic-soldier-count: 3
+  breeze-relic-cooldown-seconds: 60
+  breeze-relic-radius: 9.0
+  breeze-relic-horizontal-force: 1.35
+  breeze-relic-vertical-force: 1.1
+  shulker-relic-cooldown-seconds: 420
+  shulker-relic-radius: 7.0
+  shulker-relic-levitation-ticks: 100
+  shulker-shadow-step-chance: 0.10
+  guardian-relic-cooldown-seconds: 1800
+  water-disable-seconds: 180
+  guardian-relic-duration-seconds: 1800
+  shulker-shield-seconds: 30
+  guardian-mining-fatigue-seconds: 720
+  breeze-extra-knockback: 1.35
+  breeze-jump-amplifier: 1
+  blaze-soldier-health: 40.0
+  blaze-soldier-damage: 8.0
+  guardian-land-health: 16.0
+  guardian-water-health: 24.0
+  breeze-attack-speed: 5.0
+  breeze-fall-damage-multiplier: 0.35
+  guardian-water-damage-multiplier: 0.75
+  guardian-aquatic-damage-multiplier: 1.35
+  blaze-hit-fire-ticks: 100
+  enable-blaze-lava-vision: true
+  enable-blaze-lava-swim: true
+  enable-breeze-jump: true
+  enable-shulker-shadow-step: true
+  enable-guardian-wet-mob-hostility: true
+  enable-guardian-milk-immunity: true
+  guardian-trident-riptide-level: 2
+  guardian-trident-loyalty-level: 3
+discord:
+  enabled: false
+  webhook-url: ""
+  username: "Mytheria Origins"
+  events:
+    origin-selected: true
+    admin: true
+    relic-used: false
+origins:
+  blaze:
+    display-name: "&6Blaze"
+    icon: BLAZE_ROD
+    price: 250
+    enabled: true
+  breeze:
+    display-name: "&bBreeze"
+    icon: WIND_CHARGE
+    price: 250
+    enabled: true
+  shulker:
+    display-name: "&dShulker"
+    icon: SHULKER_SHELL
+    price: 300
+    enabled: true
+  guardian:
+    display-name: "&3Guardian"
+    icon: TIDE_ARMOR_TRIM_SMITHING_TEMPLATE
+    price: 400
+    enabled: true

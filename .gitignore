@@ -1,0 +1,33 @@
+# Maven output
+target/
+
+# IDE metadata
+.idea/
+.vscode/
+*.iml
+*.classpath
+*.project
+.settings/
+
+# Java and tool logs
+*.log
+hs_err_pid*
+
+# Local Paper test server data
+run/
+server/
+paper-test/
+world/
+world_nether/
+world_the_end/
+cache/
+libraries/
+versions/
+
+# Local configuration and secrets
+.env
+.env.*
+config.local.yml
+plugins/*/config.local.yml
+plugins/*/secrets.yml
+**/webhook-secrets.yml
