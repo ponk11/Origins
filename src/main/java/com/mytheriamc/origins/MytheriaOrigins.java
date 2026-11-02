@@ -164,7 +164,7 @@ public final class MytheriaOrigins extends JavaPlugin implements Listener, Comma
         if (!title.contains("Origins") && !title.contains("Private Vault")) return;
         if (title.contains("Private Vault")) return;
         e.setCancelled(true); ItemStack clicked = e.getCurrentItem(); Material type = clicked.getType();
-        if (title.contains("Admin")) {
+        if (title.contains("Admin") && p.hasPermission("mytheriaorigins.admin")) {
             if (type == Material.RECOVERY_COMPASS) { reloadConfig(); tell(p, "&aConfig reloaded."); openAdmin(p); }
             else if (type == Material.BARRIER) { origins.remove(p.getUniqueId()); originExpires.remove(p.getUniqueId()); removeOriginEffects(p); savePlayers(); discord.send("admin", p.getName() + " cleared their origin."); tell(p, "&aYour origin was cleared."); openAdmin(p); }
             else if (type == Material.NETHER_STAR) { Origin[] values = Origin.values(); setOrigin(p, values[new Random().nextInt(values.length)]); openAdmin(p); }
